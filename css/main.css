@@ -1,0 +1,284 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-color: #000000;
+}
+
+div.container {
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "phone";
+}
+
+main {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "menu"
+    "hours"
+    "maps"
+    "signup";
+}
+
+footer {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "credits";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "phone";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel"
+      "hours signup"
+      "hours signup"
+      "maps menu"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "credits credits";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "logo name name name"
+      "phone name name name";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel carousel"
+      "hours signup signup"
+      "menu reviews reviews"
+      "maps reviews reviews"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "credits credits";
+  }
+}
+
+div {
+  /* border: 1px solid #999999; disable this line once layout works */
+  text-align: center; /* disable this line once layout works */
+}
+
+main div {
+  /* min-height: 80px; disable this line once layout works */
+}
+
+div#logo {
+  grid-area: logo;
+}
+
+div#name {
+  grid-area: name;
+  text-shadow: 3px 3px #FF0000;
+}
+
+div#phone {
+  grid-area: phone;
+  color: #FF0000;
+}
+
+div#carousel {
+  grid-area: carousel;
+}
+
+div#menu {
+  grid-area: menu;
+}
+
+div#signup {
+  grid-area: signup;
+  padding: none;
+}
+
+div#hours {
+  grid-area: hours;
+}
+
+div#maps {
+  grid-area: maps;
+  max-width: 100%;
+}
+
+div#reviews {
+  grid-area: reviews;
+}
+
+div#credits {
+  grid-area: credits;
+}
+
+@media (max-width: 899px) {
+  div#carousel, div#reviews, div#name {
+    display: none;
+  }
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+  font-size: 100px;
+  font-family: 'Norican', cursive;
+  color: #00A651;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: 'Norican', cursive;
+  color: #FF0000;
+}
+
+h3 {
+  font-size: 25px;
+  color: #00A651;
+}
+
+h4 {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+h5 {
+  font-size: 20px;
+  color: #00A651;
+}
+
+h6 {
+  font-size: 30px;
+  font-family: 'Norican', cursive;
+  color: #FF0000;
+}
+
+/* Paragraphs and lists */
+
+p {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+p.boxed {
+  border: 2px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  font-size: 38px;
+  padding: 1em;
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+/* images */
+img {
+
+}
+
+/* links */
+
+a:link {
+  color: #FF0000;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #00A651;
+}
+
+a:active {
+  color: #FF0000;
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/
