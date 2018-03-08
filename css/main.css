@@ -150,6 +150,7 @@ div#credits {
 
 div#our {
   grid-column: span 1;
+  text-shadow: 4px 4px #FFFFFF;
 }
 
 div#price {
@@ -161,11 +162,11 @@ div#drinks {
   padding-left: 5px;
 }
 
-div#pizzas {
+div#toppings {
   grid-column: span 1;
 }
 
-div#toppings {
+div#pizzas {
   grid-column: span 1;
 }
 
@@ -261,11 +262,15 @@ p.boxed {
   padding-right: 270px;
 }
 
-.pep {
-  padding-left: 38px;
-  font-size: 70px;
-  margin-top: 0;
+.pep.boxed {
+  /*padding-left: 38px;*/
+  font-size: 100px;
+  margin-top: 50px;
   margin-bottom: 0;
+  border: 2px;
+  border-style: solid;
+  border-color: #C0C0C0;
+
 }
 
 .list {
@@ -273,6 +278,8 @@ p.boxed {
   font-size: 50px;
   margin: 0;
   padding-top: 30px;
+  font-family: 'Norican', cursive;
+  color: #FF0000;
 }
 
 ol {
